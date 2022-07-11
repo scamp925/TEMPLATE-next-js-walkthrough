@@ -2,7 +2,10 @@ import Counter from '../components/Counter';
 
 function Home() {
   return (
-    <Counter />
+    <>
+      <Counter counterTitle="Counter 1" />
+      <Counter counterTitle="Counter 2" />
+    </>
   );
 }
 
