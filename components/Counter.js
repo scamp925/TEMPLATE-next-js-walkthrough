@@ -9,7 +9,7 @@ export default function Counter({ counterTitle }) {
       <h1>{counterTitle}</h1>
       <h2>{taco}</h2>
       <button type="button" onClick={() => setTaco((preState) => preState + 1)}>Increment</button>
-      <button type="button" onClick={() => setTaco((preState) => preState - 1)}>Decrement</button>
+      <button type="button" disabled={taco === 0} onClick={() => setTaco((preState) => preState - 1)}>Decrement</button>
       <button type="button" onClick={() => setTaco(0)}>Reset</button>
     </>
   );
